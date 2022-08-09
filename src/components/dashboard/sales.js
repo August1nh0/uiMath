@@ -9,23 +9,23 @@ export const Sales = (props) => {
   const data = {
     datasets: [
       {
-        backgroundColor: '#3F51B5',
+        backgroundColor: '#3F5185',
         barPercentage: 0.5,
         barThickness: 12,
         borderRadius: 4,
         categoryPercentage: 0.5,
         data: [18, 5, 19, 27, 29, 19, 20],
-        label: 'This year',
+        label: 'Acima da média',
         maxBarThickness: 10
       },
       {
-        backgroundColor: '#EEEEEE',
+        backgroundColor: '#6E8E09',
         barPercentage: 0.5,
         barThickness: 12,
         borderRadius: 4,
         categoryPercentage: 0.5,
         data: [11, 20, 12, 29, 30, 25, 13],
-        label: 'Last year',
+        label: 'Abaixo da média',
         maxBarThickness: 10
       }
     ],
@@ -60,7 +60,7 @@ export const Sales = (props) => {
         gridLines: {
           borderDash: [2],
           borderDashOffset: [2],
-          color: theme.palette.divider,
+          color: theme.palette.primary.main,
           drawBorder: false,
           zeroLineBorderDash: [2],
           zeroLineBorderDashOffset: [2],
@@ -92,7 +92,7 @@ export const Sales = (props) => {
             Last 7 days
           </Button>
         )}
-        title="Latest Sales"
+        title="Últimas Notas"
       />
       <Divider />
       <CardContent>
