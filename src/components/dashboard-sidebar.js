@@ -99,9 +99,10 @@ export const DashboardSidebar = (props) => {
                     width: 42
                   }}
                 />
-                 <Typography align='left'>Projeto Math</Typography>
               </a>
+              
             </NextLink>
+            <Typography align='left'>Projeto Math</Typography>
           </Box>
           <Box sx={{ px: 2 }}>
             <Box
