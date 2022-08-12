@@ -7,12 +7,13 @@ import { TasksProgress } from '../components/dashboard/tasks-progress';
 import { TotalCustomers } from '../components/dashboard/total-customers';
 import { TotalProfit } from '../components/dashboard/total-profit';
 import { DashboardLayout } from '../components/dashboard-layout';
-
+import { Materia } from '../components/dashboard/materia';
+import { Assunto } from 'src/components/dashboard/Assunto';
 const Dashboard = () => (
   <>
     <Head>
       <title>
-        Dashboard | Material Kit
+        Home|Math
       </title>
     </Head>
     <Box
@@ -27,52 +28,21 @@ const Dashboard = () => (
           container
           spacing={3}
         >
+         
           <Grid
-            item
-            lg={4}
-            sm={6}
-            xl={3}
-            xs={12}
-          >
-        <Budget />
+          item
+          xl={3}
+          lg={3}
+          sm={6}
+          xs={12}>
+         <Assunto />
           </Grid>
-          <Grid
-            item
-            lg={4}
-            sm={6}
-            xl={3}
-            xs={12}
-          >
-        <Budget />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TotalCustomers />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TasksProgress />
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-            <TotalProfit sx={{ height: '100%' }} />
-          </Grid>
-          <Grid
+         
+            <Materia />
+      
+        </Grid>
+        <div align ="center">
+        <Grid
             item
             lg={8}
             md={12}
@@ -81,16 +51,18 @@ const Dashboard = () => (
           >
             <Sales />
           </Grid>
-          <Grid
+      
+        <Grid
             item
-            lg={4}
+            lg={8}
             md={6}
             xl={3}
             xs={12}
+            alignContent="center"
           >
             <LatestOrders />
           </Grid>
-        </Grid>
+          </div>
       </Container>
     </Box>
   </>
