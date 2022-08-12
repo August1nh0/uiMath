@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
 import { Budget } from '../components/dashboard/budget';
 import { LatestOrders } from '../components/dashboard/latest-orders';
-import { LatestProducts } from '../components/dashboard/latest-products';
 import { Sales } from '../components/dashboard/sales';
 import { TasksProgress } from '../components/dashboard/tasks-progress';
 import { TotalCustomers } from '../components/dashboard/total-customers';
@@ -30,12 +29,21 @@ const Dashboard = () => (
         >
           <Grid
             item
-            lg={3}
+            lg={4}
             sm={6}
             xl={3}
             xs={12}
           >
-            <Budget />
+        <Budget />
+          </Grid>
+          <Grid
+            item
+            lg={4}
+            sm={6}
+            xl={3}
+            xs={12}
+          >
+        <Budget />
           </Grid>
           <Grid
             item
@@ -78,15 +86,6 @@ const Dashboard = () => (
             lg={4}
             md={6}
             xl={3}
-            xs={12}
-          >
-            <LatestProducts sx={{ height: '100%' }} />
-          </Grid>
-          <Grid
-            item
-            lg={8}
-            md={12}
-            xl={9}
             xs={12}
           >
             <LatestOrders />
